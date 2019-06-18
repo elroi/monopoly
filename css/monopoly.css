@@ -204,6 +204,11 @@ body{
     background-size:contain;
     background-position:center;
 }
+.player.happy-face {
+    background-image:url(../images/crown.png);
+    background-size:contain;
+    background-position:center;
+}
 
 .board .dice.cell{
     background-color:white;
