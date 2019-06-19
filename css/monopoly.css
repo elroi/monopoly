@@ -205,7 +205,12 @@ body{
     background-position:center;
 }
 .player.happy-face {
-    background-image:url(../images/crown.png);
+    background-image:url(../images/grinning-face-with-smiling-eyes_1f601.png);
+    background-size:contain;
+    background-position:center;
+}
+.player.sad-face {
+    background-image:url(../images/pensive-face_1f614.png);
     background-size:contain;
     background-position:center;
 }

@@ -192,6 +192,32 @@ Monopoly.handleChanceCard = function(player){
 };
 
 Monopoly.handleCommunityCard = function(player){
+    let communityCards = [
+        {
+            type: "positive",
+            text: 'Advance to "Go"',
+            actionDescription: "Collect $200",
+            action: ""
+        },
+        {
+            type: "positive",
+            text: 'Bank error in your favor',
+            actionDescription: "Collect $200",
+            action: ""
+        },
+        {
+            type: "negative",
+            text: "Doctor's fees",
+            actionDescription: "Pay $50",
+            action: ""
+        },
+        {
+            type: "negative",
+            text: "Hospital Fees",
+            actionDescription: "Pay $50",
+            action: ""
+        },
+    ]
     //TODO: implement this method
     alert("not implemented yet!")
     Monopoly.setNextPlayerTurn();
