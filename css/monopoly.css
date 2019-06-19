@@ -205,13 +205,16 @@ body{
     background-position:center;
 }
 .player.happy-face {
+    border: 1px solid crimson;
     background-image:url(../images/grinning-face-with-smiling-eyes_1f601.png);
     background-size:contain;
     background-position:center;
 }
-.player.sad-face {
+/* .player.sad-face { */
+.player.jailed {
     background-image:url(../images/pensive-face_1f614.png);
     background-size:contain;
+    background-repeat: no-repeat;
     background-position:center;
 }
 
