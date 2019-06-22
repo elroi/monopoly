@@ -117,10 +117,15 @@ Monopoly.setNextPlayerTurn = function() {
       var currentPlayerId = parseInt(
         currentPlayerTurn.attr("id").replace("player", "")
       );
-      var nextPlayerId = currentPlayerId + 1;
+      var nextPlayerId =
+        Monopoly.doubleCounter > 0 ? currentPlayerId : currentPlayerId + 1;
+      if (Monopoly.doubleCounter > 0) {
+        Monopoly.doubleCounter--;
+      }
       if (nextPlayerId > $(".player").length) {
         nextPlayerId = 1;
       }
+
       if (Monopoly.removedPlayers.indexOf(nextPlayerId) > -1) {
         continue;
       } else {
@@ -168,12 +173,14 @@ Monopoly.handleBroke = function(player) {
           opacity: "0.7",
           height: "150px",
           width: "150px"
-        },{
+        },
+        {
           duration: 1000,
           complete: function() {
-            $( this ).remove()
+            $(this).remove();
           }
-        });
+        }
+      );
       Monopoly.removedPlayers.push(
         player.attr("id").charAt(player.attr("id").length - 1)
       );
