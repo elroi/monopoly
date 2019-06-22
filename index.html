@@ -278,6 +278,7 @@
                 </section>
                 <div class="popup-lightbox" style="display:none;">
                         <div class="middle-center shadowed popup">
+                                <!-- intro -->
                                 <div id="intro" class="popup-page" style="display:none;">
                                         <div class="popup-title">Welcome to Monopoly</div>
                                         <div class="popup-content">Please choose how many players?<br /><input
@@ -287,6 +288,7 @@
                                                 </div>
                                         </div>
                                 </div>
+                                <!-- buy -->
                                 <div id="buy" class="popup-page" style="display:none;">
                                         <div class="popup-title">This cell is available for sale!</div>
                                         <div class="popup-content">Do you want to buy it for <span class="cell-price">
@@ -296,13 +298,14 @@
                                                 <div class="invalid-error">You don't have enough money...</div>
                                         </div>
                                 </div>
-
+                                <!-- jail -->
                                 <div id="jail" class="popup-page" style="display:none;">
                                         <div class="popup-title">Go to Jail!</div>
                                         <div class="popup-content">You miss 3 turns<br />
                                                 <button id="ok" class="clickable">Bummer</button>
                                         </div>
                                 </div>
+                                <!-- pay -->
                                 <div id="pay" class="popup-page" style="display:none;">
                                         <div class="popup-title">Pay up</div>
                                         <div class="popup-content">This property belongs to <span
@@ -311,6 +314,7 @@
                                                 <button id="ok" class="clickable">:-(</button>
                                         </div>
                                 </div>
+                                <!-- chance -->
                                 <div id="chance" class="popup-page" style="display:none;">
                                         <div class="popup-title"></div>
                                         <div class="popup-content">
@@ -318,11 +322,29 @@
                                                 <button id="ok" class="clickable">OK</button>
                                         </div>
                                 </div>
+                                <!-- community -->
                                 <div id="community" class="popup-page" style="display:none;">
                                         <div class="popup-title"></div>
                                         <div class="popup-content">
                                                 <div id="text-placeholder"></div>
                                                 <button id="ok" class="clickable">OK</button>
+                                        </div>
+                                </div>
+                                <!-- broke -->
+                                <div id="broke" class="popup-page" style="display:none;">
+                                        <div class="popup-title"></div>
+                                        <div class="popup-content">
+                                                <div id="text-placeholder"></div>
+                                                <button id="ok" class="clickable">OK</button>
+                                        </div>
+                                </div>
+                                <!-- win -->
+                                <div id="win" class="popup-page" style="display:none;">
+                                        <div class="popup-title"></div>
+                                        <div class="popup-content">
+                                                <div id="text-placeholder"></div>
+                                                <button id="yes" class="clickable">YES</button>
+                                                <button id="no" class="clickable">NO</button><br>
                                         </div>
                                 </div>
                         </div>
